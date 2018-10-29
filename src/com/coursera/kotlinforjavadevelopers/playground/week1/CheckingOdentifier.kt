@@ -1,14 +1,14 @@
 package com.coursera.kotlinforjavadevelopers.playground.week1
 
 fun isValidIdentifier(s: String): Boolean {
-    var isValid = s.isNotEmpty() && (s[0].isLetter() || s[0].equals('_'))
-    for (i in 1 until s.length) {
-        if (!isValid) {
-            break
-        }
-        isValid = isValid && s[i].isLetterOrDigit()
+    fun isValidCharacter(ch: Char) =
+    // ch.isLetterOrdigit() is equivalent to (ch in '0'..'9' || ch in 'a'..'z' || ch in 'A'..'Z')
+            ch == '_' || ch.isLetterOrDigit()
+    if (s.isEmpty() || s[0].isDigit()) return false
+    for (ch in s) {
+        if (!isValidCharacter(ch)) return false
     }
-    return isValid
+    return true
 }
 
 fun main(args: Array<String>) {
