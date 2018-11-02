@@ -1,4 +1,4 @@
-package com.coursera.kotlinforjavadevelopers.playground.week1
+package com.coursera.kotlinforjavadevelopers.playground.week2
 
 fun isValidIdentifier(s: String): Boolean {
     fun isValidCharacter(ch: Char) =

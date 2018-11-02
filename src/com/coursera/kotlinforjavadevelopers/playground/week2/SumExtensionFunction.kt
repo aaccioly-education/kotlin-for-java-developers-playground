@@ -1,4 +1,4 @@
-package com.coursera.kotlinforjavadevelopers.playground.week1
+package com.coursera.kotlinforjavadevelopers.playground.week2
 
 fun List<Int>.sum(): Int {
     var result = 0
