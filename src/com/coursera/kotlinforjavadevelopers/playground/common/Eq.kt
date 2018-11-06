@@ -1,4 +1,4 @@
-package com.coursera.kotlinforjavadevelopers.playground.week2
+package com.coursera.kotlinforjavadevelopers.playground.common
 
 infix fun <T> T.eq(other: T) {
     if (this == other) println("OK!")

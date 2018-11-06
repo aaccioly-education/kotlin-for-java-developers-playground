@@ -1,5 +1,7 @@
 package com.coursera.kotlinforjavadevelopers.playground.week2
 
+import com.coursera.kotlinforjavadevelopers.playground.common.eq
+
 data class Evaluation(val positions: Int, val letters: Int)
 
 fun evaluateGuess(secret: String, guess: String): Evaluation {
